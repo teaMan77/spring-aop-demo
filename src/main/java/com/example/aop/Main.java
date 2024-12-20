@@ -9,6 +9,7 @@ public class Main {
                 new AnnotationConfigApplicationContext(BeanConfig.class);
 
         ShoppingCart shoppingCart = context.getBean(ShoppingCart.class);
-        shoppingCart.cart();
+        shoppingCart.cart("Processing...");
+        shoppingCart.getQuantity();
     }
 }
